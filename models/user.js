@@ -4,6 +4,7 @@ const Schema = mongoose.Schema;
 
 // require('mongoose-currency').loadType(mongoose);
 // const Currency = mongoose.Types.Currency;
+//
 
 const userSchema = new Schema({
     firstname: {
