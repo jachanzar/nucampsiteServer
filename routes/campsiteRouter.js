@@ -240,4 +240,3 @@ campsiteRouter.route('/:campsiteId')
         .catch(err => next(err));
     });
 module.exports = campsiteRouter;
-//
