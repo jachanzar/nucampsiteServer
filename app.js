@@ -29,7 +29,7 @@ connect.then(() => console.log('Connected correctly to server'),
 
 var app = express();
 
-//redirect app to secure server; catch everything
+//redirect app to secure server; use app.all to catch every type of hTTP request;
 app.all('*', (req, res, next) => {
   if (req.secure) {
     return next();

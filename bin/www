@@ -17,7 +17,10 @@ const fs = require('fs');
 
 var port = normalizePort(process.env.PORT || '3000');
 app.set('port', port);
-app.set('secPort', port+443); // storing value so we can GET later
+app.set('secPort', port+443); 
+/* app.set allows us to set a variable that can be accessed easily in the express value via
+a corresponding method, app.get(). 
+*/
 
 /**
  * Create HTTP server.
